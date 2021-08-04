@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #111111;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+img#im{
+    position: absolute;
+    top: 0;
+    right: 0.5%;
+    animation:rotation 6s infinite linear;
+    z-index: 10;
+}
+@keyframes rotation{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
+}  
+img#logo{
+    position: absolute;
+    top:40.8%;
+    left:25.3%;
+    z-index: 100;
+}
+#popup{
+height: 850px;
+width: 850px;
+position: fixed;
+top:0;
+right:0;
+background-image:url(./images/hello.jpg);
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat ;
+transform: translateX(900px);
+padding-top: 50px;
+transition: transform 1s ease-in-out;
+font-family: poppins, sans-serif;
+}
+h2{
+    font-size: 44px;
+    position: absolute;
+    top:1%;
+    left: 40%;
+    color: whitesmoke;
+    animation: rotate 4s linear infinite;
+}
+/* span{
+    color:#ffd629;
+}*/
+#question{
+    position: absolute;
+    width:400px;
+    height:500px;
+    top:13.5%;
+    left:53%; 
+}
+text{
+    pointer-events: none;
+}
+#chart{
+    position: absolute;
+    width:500px;
+    height:500px;
+    top:43%;
+    left:36.15%;
+    transform: translate(-50%,-40%);
+    z-index:10;
+}
+#popup.active{
+transform: translateX(0px);
+} 
+#question h1{
+font-size: 25px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    margin: 0;
+    top:55%;
+} 
+#marker{
+position: absolute;
+top: 22%;
+left: 25.3%;
+z-index: 20;
+}
+#stand{
+position: absolute;
+top:20%;
+z-index:1;
+}
+#image{
+position: absolute;
+top: 22%;
+left: 53.5%;
+z-index: 50;
+}
